@@ -1,6 +1,7 @@
 #ifndef MILLITIMER_H
 #define MILLITIMER_H
 
+#include <stdint.h> // Needed since Arduino IDE 1.8.10 otherwise get error about uint32_t not being named type.
 
 // This class sets up a software timer which allows the caller to check how much time has elapsed since 
 // it was last polled and report whether a minimum interval has been passed.
